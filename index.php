@@ -42,7 +42,7 @@ include("header.php");
 
 
 <div class="container">
-   <img src=image/qfx.jpg alt="" class="image-resize" style="width: 100%; height: 400px;">
+   <img src=img/qfx.jpg alt="" class="image-resize" style="width: 100%; height: 400px;">
 </div>
 
 
