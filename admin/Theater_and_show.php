@@ -77,7 +77,8 @@ if (mysqli_num_rows($result) > 0) {
                 <select class="form-control" name="edit_screen" id="edit_screen">
                   <option value="<?php echo $row['theater'];?>"><?php echo $row['theater'];?></option>
                   <option value="1">1</option>
-                  <option value="2">2</option>                    
+                  <option value="2">2</option>    
+                  <option value="3">3</option>                
                 </select>
                 <small></small>
               </div>
@@ -157,7 +158,8 @@ if (mysqli_num_rows($result) > 0) {
                 <select class="form-control" name="theater_name" id="theater_name">
                   <option value="">theater name</option>
                   <option value="1">1</option>
-                  <option value="2">2</option>                    
+                  <option value="2">2</option> 
+                  <option value="3">3</option>                   
                 </select>
               </div>
             </div>

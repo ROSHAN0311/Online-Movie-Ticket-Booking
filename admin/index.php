@@ -42,6 +42,7 @@ include_once 'Database.php';
           </thead>
           <?php
 
+
 $result = mysqli_query($conn,"SELECT * FROM admin");
 
 if (mysqli_num_rows($result) > 0) {
@@ -64,6 +65,9 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </main>
   </div>
+  <body>
+    
+</body>
 </div>
 
 <?php include "./templates/footer.php"; ?>
@@ -79,7 +83,7 @@ foreach($movielist as $movie){
   $sum = $row['count'];
   $movie_price[]= $sum;
 
-}
+} 
 ?>
 <script type="text/javascript" src="./js/admin.js"></script>
 <script>
@@ -112,3 +116,5 @@ var ctx = document.getElementById('boxChart')
     }
   })
   </script>
+
+  

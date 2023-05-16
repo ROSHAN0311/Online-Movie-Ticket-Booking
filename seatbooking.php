@@ -48,8 +48,8 @@
                 var count = $("[type='checkbox']:checked").length;
                 $('#count').val($("[type='checkbox']:checked").length);
 
-                if(count == 8){
-                    document.getElementById('notvalid').innerHTML="Maximun seat seleact 8"
+                if(count == 50){
+                    document.getElementById('notvalid').innerHTML="Maximun seat seleact 50"
             return false;
                 }
 
