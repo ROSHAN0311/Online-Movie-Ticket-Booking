@@ -28,7 +28,7 @@ if (!isset($_SESSION['uname'])) {
         </div>
     </div> <!-- End -->
     <div class="row">
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-7 mx-auto">
 <div class="card ">
                 <div class="card-header">
                     <center>
@@ -43,8 +43,8 @@ if (!isset($_SESSION['uname'])) {
                 ?>
                     <table>
                         <tr>
-                        <td>01-7834788</td>
-                        <td style="padding: 12px 2px 12px 155px;">Custemer Id: <?php echo $row['custemer_id'];?></td>
+                        <td style="align:center;" >01-7834788</td>
+                        <td style="padding: 25px 15px 20px 155px;">Custemer Id: <?php echo $row['custemer_id'];?></td>
                     </tr>
                     <tr>
                         <td></td><td style="padding: 1px 2px 1px 155px;">Date: <?php echo $row['payment_date'];?></td>

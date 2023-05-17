@@ -27,7 +27,11 @@ include_once 'Database.php';
 
 
       <canvas class="my-4 w-100" id="boxChart" width="900" height="380"></canvas> 
-
+      <div>
+    <button type="button" style="display: inline-block; position:centre; padding: 10px 20px; background-color: #ffcccb; color: black; text-decoration: none; border-radius: 4px;"  onclick="window.location.href='prediction.php'">Go for Prediction</button><br>
+    </div>
+    <br>
+    
       <h2>Total Admins</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
@@ -62,15 +66,19 @@ if (mysqli_num_rows($result) > 0) {
            
           
         </table>
+       
       </div>
     </main>
   </div>
   <body>
     
+    
+    
 </body>
 </div>
 
 <?php include "./templates/footer.php"; ?>
+
 
 <?php
 //Algorithm for display chart with movies as collection 
@@ -116,5 +124,5 @@ var ctx = document.getElementById('boxChart')
     }
   })
   </script>
-
+ 
   

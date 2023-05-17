@@ -37,9 +37,9 @@ if (!isset($_SESSION['admin'])) {
             <tr>
               <th>id</th>
               <th>Movie name</th>
-              <th>Directer</th>
-              <th>categroy</th>
-              <th>language</th>
+              <th>Director</th>
+              <th>Categroy</th>
+              <th>Language</th>
               <th>Show</th>
               <th>Image</th>
               <th>Action</th>
@@ -78,7 +78,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
       <div class="modal-body">
         <form id="insert_movie" action="insert_data.php" method="post">
-          <h4> Yor Sour This id "<?php echo $row['id'];?>" is delete.</h4>
+          <h4> Your Show  "<?php echo $row['movie_name'];?>" Is Delete.</h4>
           <input type="hidden" name="id" value="<?php echo $row['id'];?>">
           <input type="submit" name="deletemovie" id="deletemovie" value="OK" class="btn btn-primary">
           </form>
@@ -110,7 +110,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Directer Name</label>
+                <label>Director Name</label>
                 <input class="form-control" name="edit_directer_name" id="edit_directer_name" value="<?php echo $row['directer'];?>">
               </div>
             </div>
@@ -173,7 +173,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>       
             <div class="col-12">
               <div class="form-group">
-                <label>Set of Time</label>
+                <label>Image</label>
                 <img src="image/<?php echo $row['image'];?>" width="10%">
                 <input type="file" name="edit_img" id="edit_img" class="form-control">
                 <input type="hidden" name="old_image" value="<?php echo $row['image'];?>" id="old_image" class="form-control">              
@@ -228,8 +228,8 @@ if (mysqli_num_rows($result) > 0) {
         		</div>
             <div class="col-12">
               <div class="form-group">
-                <label>Directer Name</label>
-                <input class="form-control" name="directer_name" id="directer_name" placeholder="Directer name">
+                <label>Director Name</label>
+                <input class="form-control" name="directer_name" id="directer_name" placeholder="Director name">
               </div>
             </div>
             <div class="col-12">

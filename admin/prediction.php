@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Print the predicted value
     echo "Predicted value for independent value {$independentValue}: {$predictedValue}\n";
 }
-?>
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -147,33 +147,67 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Linear Regression Prediction</title>
+    <title>Prediction</title>
     <style>
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .form-wrapper {
-            text-align: center;
-        }
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.form-wrapper {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="form-wrapper">
-            <h1>Linear Regression Prediction</h1>
+            <h1>Next Show Tickets Prediction</h1>
             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                <label for="seatBooked">Seat Booked (comma-separated):</label>
+                <label for="seatBooked">Show Booked (comma-separated):</label>
                 <input type="text" name="seatBooked" id="seatBooked" required><br>
 
                 <label for="ticketSold">Ticket Sold (comma-separated):</label>
                 <input type="text" name="ticketSold" id="ticketSold" required><br>
 
                 <label for="independentValue">Independent Value to Predict:</label>
-                <button type="submit">Predict</button>
+               
                 <input type="number" name="independentValue" id="independentValue" required><br>
+                <button type="submit">Predict</button>
         </form>
     </div>
 </div>

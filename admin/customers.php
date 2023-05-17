@@ -40,11 +40,11 @@ if (!isset($_SESSION['admin'])) {
               <th>Theater</th>
               <th>Show_time</th>
               <th>Seat</th>
+              <th>Booked Seat</th>
               <th>Total Seat</th>
-              <th>Price</th>
-              <th>Payment Date</th>
+              <th>Total Payment</th>
               <th>Booking Date</th>
-              <th>Custemer</th>
+              <th>Customer</th>
             </tr>
           </thead>
           <tbody id="customer_list">
